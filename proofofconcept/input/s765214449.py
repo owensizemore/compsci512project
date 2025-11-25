@@ -1,0 +1,1 @@
+print ' '.join(sorted(raw_input().strip().split(), reverse=True))

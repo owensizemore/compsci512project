@@ -1,0 +1,1 @@
+print ' '.join(map(str,list(reversed(sorted(map(int,raw_input().split()))))))

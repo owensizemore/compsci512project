@@ -1,0 +1,1 @@
+print reduce(lambda x,y:x+y, map(lambda x:str(x)+' ', sorted(map(int, raw_input().split()))[::-1])).rstrip()

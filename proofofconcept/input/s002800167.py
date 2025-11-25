@@ -1,0 +1,5 @@
+a = list(map(int,(input().split())))
+a = sorted(a,reverse=True)
+for i in range(0,4):
+    print(a[i],end=' ')
+print(a[4])
