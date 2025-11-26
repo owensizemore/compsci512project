@@ -1,0 +1,14 @@
+unknown	IMPORT_SYS	1
+file1	CONTROL_FOR	1
+file2	CONTROL_FOR	1
+unknown	DATA_LIST	1
+unknown	CONTROL_FOR	1
+unknown	CONTROL_IF	1
+unknown	CONTROL_ELSE	1
+unknown	DATA_LIST	1
+unknown	COMPARE_OP_EQ	1
+unknown	OPERATOR_ADD	1
+file2	OPERATOR_MULT	1
+file2	OPERATOR_MULT	1
+unknown	OPERATOR_MULT	1
+unknown	UNARY_OP_USUB	1

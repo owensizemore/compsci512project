@@ -1,4 +1,5 @@
-# cat test.py | ./mapper.py
+# cat test_mapper.py | ./mapper.py
+# cat test_reducer.txt | ./reducer.py
 
 #! /usr/bin/env python3.4
 import sys
