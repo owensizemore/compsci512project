@@ -29,3 +29,5 @@ hadoop jar /usr/lib/hadoop/hadoop-streaming-3.3.6.jar \
 ![](proofofconcept/output/line_count_boxplot.png)
 ![](problemset/languagestructures/analysis/frequency_chart.png)
 ![](problemset/languagestructures/analysis/import_popularity.png)
+![](problemset/programmingerrors/analysis/correlation_heatmap.png)
+![](problemset/lintrules/analysis/rules_table.png)

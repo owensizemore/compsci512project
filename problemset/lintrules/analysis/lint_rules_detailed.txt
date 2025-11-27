@@ -1,0 +1,296 @@
+====================================================================================================
+DETAILED LINT RULES REPORT
+Top 20 Most Common Flake8 Lint Rules
+====================================================================================================
+
+====================================================================================================
+#1 - E225: missing whitespace around operator
+====================================================================================================
+Occurrences: 6,177
+
+EXPLANATION:
+Binary operators should have spaces on both sides
+
+EXAMPLE:
+x=1+2  # Missing spaces around = and +
+
+BEST PRACTICE:
+Add spaces: x = 1 + 2
+
+====================================================================================================
+#2 - E111: indentation is not a multiple of four
+====================================================================================================
+Occurrences: 3,778
+
+EXPLANATION:
+Indentation should use multiples of 4 spaces (PEP 8 standard)
+
+EXAMPLE:
+def foo():
+  return 1  # Wrong: 2 spaces
+
+BEST PRACTICE:
+Use 4 spaces per indentation level consistently
+
+====================================================================================================
+#3 - E231: missing whitespace after ","
+====================================================================================================
+Occurrences: 2,221
+
+EXPLANATION:
+Comma should be followed by a space
+
+EXAMPLE:
+func(a,b,c)  # Missing spaces after commas
+
+BEST PRACTICE:
+Add spaces: func(a, b, c)
+
+====================================================================================================
+#4 - E228: missing whitespace around modulo operator
+====================================================================================================
+Occurrences: 2,103
+
+EXPLANATION:
+Modulo operator should have spaces on both sides
+
+EXAMPLE:
+x = 10%3  # Missing spaces around %
+
+BEST PRACTICE:
+Add spaces: x = 10 % 3
+
+====================================================================================================
+#5 - W191: indentation contains tabs
+====================================================================================================
+Occurrences: 1,279
+
+EXPLANATION:
+Use spaces instead of tabs for indentation
+
+EXAMPLE:
+def foo():
+	return 1  # Tab used
+
+BEST PRACTICE:
+Replace tabs with 4 spaces
+
+====================================================================================================
+#6 - W293: blank line contains whitespace
+====================================================================================================
+Occurrences: 738
+
+EXPLANATION:
+Empty lines should not contain spaces or tabs
+
+EXAMPLE:
+x = 1
+    
+y = 2  # Spaces on blank line
+
+BEST PRACTICE:
+Remove all whitespace from blank lines
+
+====================================================================================================
+#7 - F401: module imported but unused
+====================================================================================================
+Occurrences: 695
+
+EXPLANATION:
+Imported module is never used in the code
+
+EXAMPLE:
+import os  # os is never used
+
+BEST PRACTICE:
+Remove unused imports or use the module
+
+====================================================================================================
+#8 - E275: missing whitespace after keyword
+====================================================================================================
+Occurrences: 429
+
+EXPLANATION:
+Keywords like assert, raise should have space after them
+
+EXAMPLE:
+assert(x > 0)  # Missing space after assert
+
+BEST PRACTICE:
+Add space: assert (x > 0)
+
+====================================================================================================
+#9 - E203: whitespace before ":"
+====================================================================================================
+Occurrences: 333
+
+EXPLANATION:
+Unnecessary space before colon
+
+EXAMPLE:
+x[1 :]  # Space before colon
+
+BEST PRACTICE:
+Remove space: x[1:]
+
+====================================================================================================
+#10 - E305: expected 2 blank lines after class or function definition
+====================================================================================================
+Occurrences: 303
+
+EXPLANATION:
+Need 2 blank lines after top-level definitions
+
+EXAMPLE:
+def foo():
+    pass
+code()  # Missing blank lines
+
+BEST PRACTICE:
+Add 2 blank lines after top-level definitions
+
+====================================================================================================
+#11 - E265: block comment should start with "# "
+====================================================================================================
+Occurrences: 273
+
+EXPLANATION:
+Comments should have a space after the hash
+
+EXAMPLE:
+#comment  # Missing space after #
+
+BEST PRACTICE:
+Add space: # comment
+
+====================================================================================================
+#12 - E302: expected 2 blank lines, found N
+====================================================================================================
+Occurrences: 240
+
+EXPLANATION:
+Top-level functions/classes need 2 blank lines before them
+
+EXAMPLE:
+def foo():
+    pass
+def bar():  # Only 0 lines
+
+BEST PRACTICE:
+Add 2 blank lines before function/class definitions
+
+====================================================================================================
+#13 - W291: trailing whitespace
+====================================================================================================
+Occurrences: 237
+
+EXPLANATION:
+Unnecessary whitespace at end of line
+
+EXAMPLE:
+x = 1   # Spaces after 1
+
+BEST PRACTICE:
+Remove trailing spaces at end of line
+
+====================================================================================================
+#14 - E999: SyntaxError or IndentationError
+====================================================================================================
+Occurrences: 212
+
+EXPLANATION:
+Code has a syntax error that prevents parsing
+
+EXAMPLE:
+def foo(  # Unclosed parenthesis
+
+BEST PRACTICE:
+Fix the syntax error in the code
+
+====================================================================================================
+#15 - E501: line too long (N > 79 characters)
+====================================================================================================
+Occurrences: 182
+
+EXPLANATION:
+Lines should not exceed 79 characters (PEP 8)
+
+EXAMPLE:
+x = very_long_function_name(arg1, arg2, arg3, arg4, arg5, arg6)
+
+BEST PRACTICE:
+Break long lines with parentheses or backslashes
+
+====================================================================================================
+#16 - E701: multiple statements on one line (colon)
+====================================================================================================
+Occurrences: 158
+
+EXPLANATION:
+Compound statements should not be on one line
+
+EXAMPLE:
+if x: print(x)  # Statement on same line
+
+BEST PRACTICE:
+Split: if x:\n    print(x)
+
+====================================================================================================
+#17 - E712: comparison to True should be "if cond is True:" or "if cond:"
+====================================================================================================
+Occurrences: 149
+
+EXPLANATION:
+Do not use == or != with True/False/None
+
+EXAMPLE:
+if x == True:  # Wrong comparison
+
+BEST PRACTICE:
+Use: if x: or if x is True:
+
+====================================================================================================
+#18 - W391: blank line at end of file
+====================================================================================================
+Occurrences: 123
+
+EXPLANATION:
+File should not end with blank lines
+
+EXAMPLE:
+x = 1
+
+
+# Extra blank lines at EOF
+
+BEST PRACTICE:
+Remove trailing blank lines at end of file
+
+====================================================================================================
+#19 - E211: whitespace before "("
+====================================================================================================
+Occurrences: 110
+
+EXPLANATION:
+Unnecessary space before opening parenthesis
+
+EXAMPLE:
+func (arg)  # Space before (
+
+BEST PRACTICE:
+Remove space: func(arg)
+
+====================================================================================================
+#20 - F821: undefined name
+====================================================================================================
+Occurrences: 107
+
+EXPLANATION:
+Variable or function used before being defined
+
+EXAMPLE:
+print(x)  # x is not defined
+
+BEST PRACTICE:
+Define variable before use: x = 1
+
